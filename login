@@ -1,2 +1,3 @@
-curl -X POST http://localhost:5000/api/auth/login -H "Content-Type: application/json" -d "{\"email\":\"amina@example.com\",\"password\":\"secret123\"}"
-{"token":"<JWT returned by server>","user":{"name":"Amina","email":"amina@example.com"}}
+$payload = @{ email = 'giftlink.curl.20260910@example.com'; password = 'GiftLinkCurl123!' } | ConvertTo-Json -Compress
+$payload | curl.exe -sS --max-time 30 -X POST 'http://localhost:5000/api/auth/login' -H 'Content-Type: application/json' --data-binary '@-'
+{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhYTM3MDUyY2MxZmM5YWRiZDA2YTllZiIsImVtYWlsIjoiZ2lmdGxpbmsuY3VybC4yMDI2MDkxMEBleGFtcGxlLmNvbSIsImlhdCI6MTc4OTA5NjEzNywiZXhwIjoxNzg5MTAzMzM3fQ.W2oQGzC8MsBlNhoyIwyp7XtBmuZaEO2dCWE1blSh40g","user":{"id":"6aa37052cc1fc9adbd06a9ef","name":"GiftLink Curl User","email":"giftlink.curl.20260910@example.com"}}
