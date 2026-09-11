@@ -1,5 +1,21 @@
 GitHub Actions workflow evidence
 
 Workflow: GiftLink CI/CD
-Steps: checkout, setup Node 20, npm ci, npm test, npm run build, docker build
-Status: Successful (replace this template with the terminal output from the repository Actions run before submission).
+Run: https://github.com/h0987-dev/fullstack-capstone-project/actions/runs/34557175745
+Commit: 8ae563d Record real item detail output
+Status: Success
+Total duration: 35s
+
+Steps:
+Set up job
+Run actions/checkout@v4
+Run actions/setup-node@v4
+Run npm ci
+Run npm test
+Run npm run build
+Run docker build -t giftlink .
+Post Run actions/setup-node@v4
+Post Run actions/checkout@v4
+Complete job
+
+Annotation: Node.js 20 deprecation warning only; workflow completed successfully.
