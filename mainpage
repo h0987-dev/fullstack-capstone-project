@@ -1,0 +1,5 @@
+curl http://localhost:5000/api/gifts
+[
+  { "title": "A quiet morning kit", "category": "Wellness", "description": "Tea, linen and a little space to breathe." },
+  { "title": "The curious cook box", "category": "Food", "description": "Small tools for someone always trying a new recipe." }
+]

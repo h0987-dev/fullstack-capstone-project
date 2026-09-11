@@ -1,0 +1,2 @@
+curl http://localhost:5000/api/gifts/<gift-id>
+{"title":"A quiet morning kit","category":"Wellness","description":"Tea, linen and a little space to breathe.","emoji":"🍵"}

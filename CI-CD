@@ -1,0 +1,5 @@
+GitHub Actions workflow evidence
+
+Workflow: GiftLink CI/CD
+Steps: checkout, setup Node 20, npm ci, npm test, npm run build, docker build
+Status: Successful (replace this template with the terminal output from the repository Actions run before submission).
